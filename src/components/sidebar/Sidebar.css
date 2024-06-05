@@ -1,0 +1,64 @@
+.sidebar-container {
+    width: 25%;
+    min-height: 100vh;
+    border-right: 1px solid #1CA152;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.sidebar-container > :not(i) {
+    width: 100%;
+    display: flex;
+}
+
+.sidebar-container i {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.sidebar-container .title {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 17px;
+    color: #1CA152;
+}
+
+.sidebar-container .title img {
+    scale: 0.75;
+}
+
+.sidebar-container .tools {
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-container .tools button {
+    width: 100%;
+    padding: 30px;
+    border: none;
+    border-bottom: 1px solid #1CA152;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+}
+
+.sidebar-container .tools button:not(:first-child) {
+    color: gray;
+}
+
+.sidebar-container .tools button:last-child {
+    border-bottom: none;
+}
+
+.sidebar-container .tools button.active {
+    color: black;
+    background-color: #1CA152;
+}

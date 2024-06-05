@@ -1,0 +1,128 @@
+.result-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.result-container .filter {
+    margin: 0 0 15px 25px;
+    display: flex;
+    column-gap: 0px;
+}
+
+.result-container .filter button {
+    padding: 7px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.result-container .filter button:nth-child(1) {
+    border: 1px solid white;
+    color: white;
+}
+
+.result-container .filter button:nth-child(2) {
+    border: 1px solid #1CA152;
+    color: #1CA152;
+}
+
+.result-container .filter button:nth-child(3) {
+    border: 1px solid #EBDE76;
+    color: #EBDE76;
+}
+
+.result-container .filter button:nth-child(4) {
+    border: 1px solid #E192EF;
+    color: #E192EF;
+}
+
+.result-container .filter button:nth-child(5) {
+    border: 1px solid #E965A5;
+    color: #E965A5;
+}
+
+.result-container .filter button.active,
+.result-container .filter button:hover {
+    color: black;
+}
+
+.result-container .filter button.active:nth-child(1),
+.result-container .filter button:nth-child(1):hover {
+    background-color: white;
+}
+
+.result-container .filter button.active:nth-child(2),
+.result-container .filter button:nth-child(2):hover {
+    background-color: #1CA152;
+}
+
+.result-container .filter button.active:nth-child(3),
+.result-container .filter button:nth-child(3):hover {
+    background-color: #EBDE76;
+}
+
+.result-container .filter button.active:nth-child(4),
+.result-container .filter button:nth-child(4):hover {
+    background-color: #E192EF;
+}
+
+.result-container .filter button.active:nth-child(5),
+.result-container .filter button:nth-child(5):hover {
+    background-color: #E965A5;
+}
+
+.result-container .titles {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1CA152;
+    display: flex;
+    font-size: 17px;
+}
+
+.result-container .results {
+    height: 250px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.result-container .results .result {
+    display: flex;
+}
+
+.result-container span:not(:first-child) {
+    text-align: center;
+}
+
+.result-container .result * {
+    font-size: 14px;
+}
+
+.result-container .result a,
+.result-container span:nth-child(1) {
+    margin-left: 25px;
+    flex: 5;
+}
+
+.result-container span:nth-child(2) {
+    flex: 2;
+}
+
+.result-container span:nth-child(3) {
+    flex: 3;
+}
+
+.result-container .results .loading,
+.result-container .results .no-results {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container .results .no-results {
+    font-size: 23px;
+    color: #1CA152;
+}

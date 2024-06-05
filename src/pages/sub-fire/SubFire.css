@@ -1,0 +1,14 @@
+.subfire-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.subfire-container .main {
+    width: 75%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+}

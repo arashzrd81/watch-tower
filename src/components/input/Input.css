@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 19px;
+}
+
+form * {
+    font-size: 19px;
+}
+
+form input {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+form button {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #1CA152;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    color: #1CA152;
+    background-color: transparent;
+    box-shadow: 0 0 10px #1CA152;
+}
+
+form button.disabled {
+    box-shadow: none;
+}
+
+form button.enabled:hover {
+    color: black;
+    background-color: #1CA152;
+}
+
+form i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
