@@ -41,8 +41,13 @@ form button.enabled:hover {
     background-color: #1CA152;
 }
 
+form .reset-buttons {
+    margin-left: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+
 form i {
-    margin-left: 10px;
     cursor: pointer;
-    color: white;
+    color: #1CA152;
 }

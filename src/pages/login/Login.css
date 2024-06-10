@@ -18,16 +18,11 @@
     background-color: transparent;
 }
 
-.login-container form h1 {
-    text-align: center;
-    font-size: 33px;
-    font-weight: 100;
-}
-
 .login-container form input {
     padding: 10px;
     border: 1px solid white;
     outline: none;
+    text-align: center;
     font-size: 16px;
 }
 

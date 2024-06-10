@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ReactTyped } from "react-typed";
 import { showToast } from "../../helper/showToast";
 import logo from "../../images/logo.png";
 import "./Login.css";
@@ -32,7 +33,15 @@ const Login = () => {
         <div className="login-container">
             <form onSubmit={handleSubmit}>
                 <img src={logo} alt="logo" />
-                <h1>ENTER THE PASSWORD</h1>
+                <ReactTyped
+                    strings={["ENTER THE PASSWORD"]}
+                    typeSpeed={100}
+                    showCursor={true}
+                    style={{
+                        "text-align": "center",
+                        "font-size": "33px"
+                    }}
+                />
                 <input
                     type="password"
                     value={password}

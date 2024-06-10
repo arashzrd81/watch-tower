@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 import logo from "../../images/logo.png";
 import "./Sidebar.css";
 
@@ -15,7 +16,17 @@ const Sidebar = ({ tool, setTool }) => {
             <i className="fa-solid fa-arrow-right-from-bracket" onClick={handleLogout}></i>
             <div className="title">
                 <img src={logo} alt="logo" />
-                <h2>WATCH TOWER</h2>
+                <ReactTyped
+                    strings={["WATCH TOWER"]}
+                    typeSpeed={80}
+                    showCursor={true}
+                    loop={true}
+                    backSpeed={40}
+                    backDelay={3000}
+                    style={{
+                        "font-size": "28px"
+                    }}
+                />
             </div>
             <div className="tools">
                 <button

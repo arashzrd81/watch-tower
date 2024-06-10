@@ -16,14 +16,21 @@ const Input = ({ socket, isRunning, setIsRunning, setResults, setCurrentFilter }
         showToast("success", "START SEARCHING ...");
     };
 
+    const handleStop = async () => {
+        await socket.disconnect();
+        setCurrentFilter("all");
+        setIsRunning(false);
+        showToast("success", "STOP DONE");
+    };
+
     const handleReset = () => {
         resetHelper();
         setIsRunning(false);
         showToast("success", "RESET DONE");
     };
 
-    const resetHelper = () => {
-        socket.disconnect();
+    const resetHelper = async () => {
+        await socket.disconnect();
         setResults([]);
         setCurrentFilter("all");
     };
@@ -54,11 +61,16 @@ const Input = ({ socket, isRunning, setIsRunning, setResults, setCurrentFilter }
             </button>
             {
                 isRunning &&
-                <i
-                    className="fa-solid fa-arrows-rotate"
-                    onClick={handleReset}>
-                </i>
-
+                <div className="reset-buttons">
+                    <i
+                        className="fa-solid fa-stop"
+                        onClick={handleStop}>
+                    </i>
+                    <i
+                        className="fa-solid fa-arrows-rotate"
+                        onClick={handleReset}>
+                    </i>
+                </div>
             }
         </form>
     );
