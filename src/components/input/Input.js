@@ -9,6 +9,10 @@ const Input = ({ socket, isRunning, setIsRunning, setResults, setCurrentFilter }
 
     const handleSearch = event => {
         event.preventDefault();
+        if (inputValue.trim() === "") {
+            showToast("error", "INPUT IS EMPTY!");
+            return;
+        }
         resetHelper();
         socket.connect();
         socket.emit("start", inputValue);

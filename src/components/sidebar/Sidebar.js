@@ -24,7 +24,10 @@ const Sidebar = ({ tool, setTool }) => {
                     backSpeed={40}
                     backDelay={3000}
                     style={{
-                        "font-size": "28px"
+                        "paddingLeft": "3px",
+                        "font-size": "28px",
+                        "color": "black",
+                        "backgroundColor": "#1CA152",
                     }}
                 />
             </div>

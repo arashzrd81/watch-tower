@@ -14,7 +14,10 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (
+        if (password === "") {
+            showToast("error", "INPUT IS EMPTY!");
+        }
+        else if (
             password === process.env.REACT_APP_PASSWORD_1 ||
             password === process.env.REACT_APP_PASSWORD_2 ||
             password === process.env.REACT_APP_PASSWORD_3
@@ -25,7 +28,7 @@ const Login = () => {
             });
             showToast("success", "LOGIN SUCCESSFULL");
         } else {
-            showToast("error", "WRONG PASSWORD");
+            showToast("error", "WRONG PASSWORD!");
         }
     };
 
