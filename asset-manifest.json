@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/watch-tower/static/css/main.6697d04d.css",
+    "main.js": "/watch-tower/static/js/main.3b97477a.js",
+    "index.html": "/watch-tower/index.html",
+    "main.6697d04d.css.map": "/watch-tower/static/css/main.6697d04d.css.map",
+    "main.3b97477a.js.map": "/watch-tower/static/js/main.3b97477a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6697d04d.css",
+    "static/js/main.3b97477a.js"
+  ]
+}
